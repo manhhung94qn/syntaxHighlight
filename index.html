@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: space-around; align-items: center; width: 100%; height: 100vh;">
+        <div class="codeContentBox">
+            <pre>
+                <code class="codeElements">
+// console.log(item);
+// console.log(item2);
+/*
+Multi 1
+console.log(item1);
+*/
+/*
+Multi 2
+console.log(item2);
+*/
+
+const name = "Manh Hung";
+const age = 2019 - 1994;
+let stringHello = `Xin chào, Mình tên là: ${name}. Năm nay mình ${age}.`;
+const showHello = () => {
+    alert(stringHello);
+}
+stringHello();
+
+
+let strFunctionRgx = /(\w*)(?=\()/g;
+var list = document.querySelectorAll('.codeElements');
+for (const item of list) {
+    let htmlContent = item.innerHTML;
+    const parsed = htmlContent
+        .replace(strStringJs2Reg,"&lt;span class=\&quot;stringJs\&quot;&gt;&#39;$1&#39;&lt;/span&gt;")
+        .replace(strFunctionExRgx,'&lt;span class=&quot;functionExJs&quot;&gt;$1&lt;/span&gt;')
+        .replace(strKeywordJs1Rgx,'&lt;span class=&quot;keywordJs1&quot;&gt;$1&lt;/span&gt;')
+        .replace(strKeywordJs2Rgx,'&lt;span class=&quot;keywordJs2&quot;&gt;$1&lt;/span&gt;');
+    item.innerHTML = parsed;
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

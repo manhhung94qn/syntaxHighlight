@@ -1,0 +1,62 @@
+/**** Parsed Code  ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.codeContentBox {
+    padding: 15px;
+    width: 760px;
+    border: 1px solid #000;
+    background-color: #1e1e1e;
+    font-size: 16px;
+    border-radius: 2px;
+}
+pre code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    margin: 15px;
+    color: #7ecbf6;
+    line-height: 16px;
+}
+
+/* pre code .special {
+    color:#008cff;
+} */
+/* pre code .special-js {
+    color:#6DE4D1;
+}
+pre code .special-js-glob {
+    color:#A1E46D;
+    font-weight:bold;
+}
+pre code .special-comment{
+    color:#aaa;
+}
+pre code .special-js-meth {
+    color:#E46D8A;
+}
+pre code .special-html {
+    color:#E4D95F;
+}
+pre code .special-sql {
+    color:#1D968C;
+}
+pre code .special-php{
+    color:#597EA7;
+} */
+/*  */
+pre code .functionExJs{
+    color:#d7daa4;
+}
+pre code .keywordJs1{
+    color:#008cff;
+}
+pre code .keywordJs2{
+    color:#ba82bf;
+}
+pre code .stringJs {
+    color:#c25642;
+}
+pre code .commentJs {
+    color:#48bfac;
+}
