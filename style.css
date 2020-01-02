@@ -45,7 +45,7 @@ pre code .special-php{
     color:#597EA7;
 } */
 /*  */
-pre code .functionExJs{
+/* pre code .functionExJs{
     color:#d7daa4;
 }
 pre code .keywordJs1{
@@ -59,4 +59,23 @@ pre code .stringJs {
 }
 pre code .commentJs {
     color:#48bfac;
+} */
+
+pre code .O_p_e_r_a_t_i_o_n {
+    color:#fff;
+}
+pre code .F_u_n_c_t_i_o_n_E_x_c {
+    color:#d7daa4;
+}
+pre code .K_e_y_w_o_r_d_J_s_3 {
+    color:#49c5b0;
+}
+pre code .K_e_y_w_o_r_d_J_s_2 {
+    color:#ba82bf;
+}
+pre code .K_e_y_w_o_r_d_J_s_1 {
+    color:#5098d4;
+}
+pre code .C_l_a_s_s_N_a_m_e {
+    color:#49c5b0;
 }

@@ -31,10 +31,28 @@ let stringHello = `Xin chào, Mình tên là: ${name}. Năm nay mình ${age}.`;
 const showHello = () => {
     alert(stringHello);
 }
+
 stringHello();
 
+s();
 
-let strFunctionRgx = /\(\w*)(?=\()/g;
+strStringJs1Reg = /"(.*?)"/g,
+//String has format: 'something'
+strStringJs2Reg = /'(.*?)'/g,
+// comment in a line, ex: //something
+strInlineCommentReg = /(\/\/.*)/g,
+// Comment in multiple rows
+strMultiCommentReg  = /(\/\*(.|\n)*\*\/)/g,
+// Teamplate string
+strStringTeamplateReg = /`(\w|\W)*`/g,
+// Regex strings, ex: /something/
+strRegexrReg = /\/.*\/(g|s|u|m|i|y){0,6}(?=[\;\,\ \.])/g,
+// Key arguments|const|let|var|function|false|true|of|in 
+strKeywordJs1Reg = /\b(arguments|const|let|var|function|false|true|of|in)(?=[ ])/g,
+// Key break|case|catch|do|while|else|finally|for
+strKeywordJs2Reg = /\b(break|case|catch|do|while|else|finally|for)(?=[ ])/g;
+var a = Date();
+var b = new rDate();
 var list = document.querySelectorAll('.codeElements');
 for (const item of list) {
     let htmlContent = item.innerHTML;
